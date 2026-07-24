@@ -1,0 +1,28 @@
+[versions]
+agp = "9.3.1"
+composeBom = "2026.06.01"
+kotlin = "2.4.10"
+
+[libraries]
+#build-logic libraries
+agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.13.0" }
+compose-compiler = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+androidx-core = { module = "androidx.core:core-ktx", version = "1.19.0" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-runtime = { module = "androidx.compose.runtime:runtime" }
+
+
+[plugins]
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+
+[bundles]
+compose-bundle = ["compose-ui", "compose-material3", "compose-runtime", "compose-foundation", "compose-ui-graphics", "compose-ui-tooling-preview"]
