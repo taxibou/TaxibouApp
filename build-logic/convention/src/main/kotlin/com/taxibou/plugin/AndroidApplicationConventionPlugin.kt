@@ -24,6 +24,10 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 buildFeatures {
                     compose = true
                 }
+                compileOptions {
+                    sourceCompatibility = Constants.javaVersion
+                    targetCompatibility = Constants.javaVersion
+                }
             }
             extensions.configure<KotlinAndroidExtension> {
                 jvmToolchain(Constants.JVM_TOOLCHAIN)
