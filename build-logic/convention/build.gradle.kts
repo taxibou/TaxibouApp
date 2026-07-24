@@ -14,12 +14,25 @@ kotlin {
 
 dependencies {
     implementation(libs.agp)
+    implementation(libs.compose.compiler)
 }
 gradlePlugin {
     plugins {
         create("android-app-convention") {
             id = "com.taxibou.android.app"
             implementationClass = "com.taxibou.plugin.AndroidApplicationConventionPlugin"
+        }
+    }
+    plugins {
+        create("compose-convention") {
+            id = "com.taxibou.compose"
+            implementationClass = "com.taxibou.plugin.ComposeConventionPlugin"
+        }
+    }
+    plugins {
+        create("android-library-convention") {
+            id = "com.taxibou.android.library"
+            implementationClass = "com.taxibou.plugin.AndroidLibraryConventionPlugin"
         }
     }
 }

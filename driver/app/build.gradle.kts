@@ -4,8 +4,8 @@ plugins {
 }
 
 android {
-    namespace = "com.taxibou.rider"
+    namespace = "com.taxibou.driver"
     defaultConfig {
-        applicationId = "com.taxibou.rider"
+        applicationId = "com.taxibou.driver"
     }
 }
