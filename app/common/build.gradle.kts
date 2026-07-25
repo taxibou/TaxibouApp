@@ -10,9 +10,7 @@ dependencies {
     implementation(libs.androidx.core)
     implementation(libs.androidx.activity.compose)
     implementation("androidx.core:core-splashscreen:1.2.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.11.0")
-    implementation(project(":core:ui"))
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.11.0")
+    api(project(":core:ui"))
 }
 
 kotlin {

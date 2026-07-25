@@ -20,7 +20,7 @@ class MainViewModel(themeRepository: ThemeRepository) : ViewModel() {
     companion object {
         val Factory = object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
-                return MainViewModel(InMemoryThemeRepository()) as T
+                @Suppress("UNCHECKED_CAST") return MainViewModel(InMemoryThemeRepository()) as T
             }
         }
     }

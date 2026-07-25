@@ -2,10 +2,10 @@ package com.taxibou.plugin
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.taxibou.Constants
+import com.taxibou.api
 import com.taxibou.common.addCoreAndroidLibraries
 import com.taxibou.common.configureAndroidCommon
 import com.taxibou.common.configureKotlinAndroidCommon
-import com.taxibou.implementation
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -32,7 +32,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             configureKotlinAndroidCommon()
             dependencies {
                 addCoreAndroidLibraries(this)
-                implementation(project(":app:common"))
+                api(project(":app:common"))
             }
         }
     }

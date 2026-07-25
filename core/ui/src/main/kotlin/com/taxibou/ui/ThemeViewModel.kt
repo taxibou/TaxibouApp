@@ -17,5 +17,4 @@ class ThemeViewModel(initialUiMode: UiMode, private val themeRepository: ThemeRe
             themeRepository.updateUiMode(uiMode)
         }
     }
-
 }
