@@ -35,4 +35,10 @@ gradlePlugin {
             implementationClass = "com.taxibou.plugin.AndroidLibraryConventionPlugin"
         }
     }
+    plugins {
+        create("kotlin-library-convention") {
+            id = "com.taxibou.kotlin"
+            implementationClass = "com.taxibou.plugin.KotlinLibraryConventionPlugin"
+        }
+    }
 }
