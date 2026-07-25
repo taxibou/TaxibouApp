@@ -17,9 +17,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import com.taxibou.UiMode
 import com.taxibou.app.MainActivity
 import com.taxibou.ui.TaxibouTheme
-import com.taxibou.ui.UiMode
 
 class RiderMainActivity : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rider_app_name">Taxibou</string>
+    <string name="driver_app_name">Taxibou Cockpit</string>
+</resources>

@@ -3,8 +3,8 @@ package com.taxibou.app
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.taxibou.ui.ThemeRepository
-import com.taxibou.ui.UiMode
+import com.taxibou.ThemeRepository
+import com.taxibou.UiMode
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharingStarted
@@ -35,8 +35,8 @@ class InMemoryThemeRepository : ThemeRepository {
         channel.trySend(UiMode.System)
     }
 
-    override suspend fun updateUiMode(uiMode: UiMode) {
-        channel.send(uiMode)
+    override suspend fun updateUiMode(mode: UiMode) {
+        channel.send(mode)
     }
 
 }

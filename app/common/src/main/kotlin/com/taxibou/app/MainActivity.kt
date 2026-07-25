@@ -10,8 +10,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.taxibou.UiMode
 import com.taxibou.ui.ThemeViewModel
-import com.taxibou.ui.UiMode
 
 abstract class MainActivity : ComponentActivity() {
 
