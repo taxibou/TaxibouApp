@@ -3,6 +3,7 @@
     <application
         android:icon="@mipmap/driver_ic_launcher"
         android:roundIcon="@mipmap/driver_ic_launcher_round"
+        android:theme="@style/Taxibou.Driver.SplashTheme"
         android:label="@string/driver_app_name"
         >
         <activity

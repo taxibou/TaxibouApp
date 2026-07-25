@@ -3,7 +3,8 @@
     <application
         android:icon="@mipmap/rider_ic_launcher"
         android:label="@string/rider_app_name"
-        android:roundIcon="@mipmap/rider_ic_launcher_round">
+        android:roundIcon="@mipmap/rider_ic_launcher_round"
+        android:theme="@style/Taxibou.Rider.SplashTheme">
         <activity
             android:name=".RiderMainActivity"
             android:exported="true">
