@@ -9,3 +9,7 @@ android {
         applicationId = "com.taxibou.rider"
     }
 }
+
+dependencies {
+    implementation(project(":core:location"))
+}
