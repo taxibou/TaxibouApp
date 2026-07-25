@@ -32,7 +32,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             configureKotlinAndroidCommon()
             dependencies {
                 addCoreAndroidLibraries(this)
-                implementation(project(":common:app"))
+                implementation(project(":app:common"))
             }
         }
     }
