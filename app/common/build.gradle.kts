@@ -9,7 +9,7 @@ android {
 dependencies {
     implementation(libs.androidx.core)
     implementation(libs.androidx.activity.compose)
-    implementation("androidx.core:core-splashscreen:1.2.0")
+    implementation(libs.splashscreen)
     api(project(":core:ui"))
 }
 
