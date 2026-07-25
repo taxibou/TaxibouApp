@@ -31,4 +31,4 @@ plugins {
 }
 includeBuild("build-logic")
 rootProject.name = "TaxibouApp"
-include(":app:riderApp", ":app:common", ":app:driverApp", ":core:ui")
+include(":app:riderApp", ":app:common", ":app:driverApp", ":core:ui", ":core:data", ":core:common")
