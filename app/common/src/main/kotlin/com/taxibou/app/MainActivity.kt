@@ -25,7 +25,7 @@ abstract class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
     }
 
-    fun setAppComposable(content: @Composable (uiMode: UiMode) -> Unit) {
+    fun setAppComposable(content: @Composable StartScope.() -> Unit) {
         setContent {
             val mainUiState by mainViewModel.uiState.collectAsState()
             when (val state = mainUiState) {
@@ -35,7 +35,9 @@ abstract class MainActivity : ComponentActivity() {
                         ThemeViewModel(state.uiMode, InMemoryThemeRepository())
                     }
                     val uiMode by themeViewModel.uiMode.collectAsState()
-                    content(uiMode)
+                    content(object : StartScope {
+                        override val uiMode: UiMode = uiMode
+                    })
                 }
             }
         }

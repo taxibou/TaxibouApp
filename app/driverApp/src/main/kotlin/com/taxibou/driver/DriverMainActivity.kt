@@ -14,7 +14,7 @@ class DriverMainActivity : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setAppComposable {
-            TaxibouTheme(it, lightColorScheme(), darkColorScheme()) {
+            TaxibouTheme(uiMode, lightColorScheme(), darkColorScheme()) {
                 Surface(Modifier.fillMaxSize()) { }
             }
         }
